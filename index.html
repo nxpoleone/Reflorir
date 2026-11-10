@@ -134,6 +134,54 @@ a.row{text-decoration:none;color:inherit}
 @media (min-width:720px){.wrap{max-width:680px}nav div{max-width:540px}nav button{font-size:12.5px}.hero{min-height:190px;padding:28px 26px}.hero p{font-size:16px}.a1{width:100px}.a2{width:96px;left:64px;bottom:76px}.a3{width:116px}.grid{max-height:420px;gap:16px}.tile svg.fl{width:76px;height:76px}.tile b{font-size:18px}.sos{padding:20px 28px}.sos i{font-size:56px}.svcs{display:grid;grid-template-columns:1fr 1fr;gap:12px}#dis .in{max-width:680px}#dis .pc .frame{width:110px;height:110px}}
 @media (min-width:1024px){.wrap{max-width:920px}.grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;max-height:none;flex:none}nav div{max-width:600px}}
 @media (max-height:520px){nav{position:static;padding:10px 14px}.wrap{padding-bottom:20px}}
+
+.seg{display:flex;background:var(--card);border-radius:99px;padding:4px;box-shadow:var(--shadow);margin:6px 0 4px}
+.seg button{flex:1;border:0;background:none;border-radius:99px;padding:9px 6px;font-weight:600;font-size:14.5px;color:var(--mute)}
+.seg button[aria-pressed="true"]{background:var(--hl);color:var(--btn-ink)}
+.phd{display:flex;align-items:center;gap:6px}.phd .nm{flex:1}
+.icb{border:0;background:none;color:var(--mute);padding:4px;border-radius:8px;display:grid;place-items:center}
+.icb svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hts{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.hts span{border:1px solid var(--line);border-radius:99px;padding:2px 10px;font-size:12.5px;color:var(--mute)}
+.acts2{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.acts2 .hug,.acts2 .hug svg{display:inline-flex;align-items:center}
+.cmb,.svb{border:1px solid var(--line);background:none;border-radius:99px;padding:5px 12px;font-size:13.5px;color:var(--mute);display:inline-flex;align-items:center;gap:6px}
+.cmb svg,.svb svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svb[aria-pressed="true"]{background:var(--hl);color:var(--btn-ink);border-color:transparent}.svb[aria-pressed="true"] svg{fill:currentColor}
+.blk{border:0;background:none;color:var(--mute);font-size:13px;text-decoration:underline;padding:8px 0 0;display:block}
+.rmenu{background:var(--sos-soft);border-radius:14px;padding:10px;margin:0 0 10px;font-size:14px}
+.rmenu button{border:0;background:var(--card);border-radius:99px;padding:5px 12px;margin:4px 6px 0 0;font-size:13.5px}
+.cms{border-top:1px solid var(--line);margin-top:10px;padding-top:8px}.cm{font-size:14px;margin-bottom:8px}.cm b{font-size:13.5px}
+.cms .row2{display:flex;gap:8px}.cms input{padding:9px 12px}.cms .btn{padding:8px 16px}
+.pcard{text-align:center;background:var(--card);border-radius:24px;padding:20px;box-shadow:var(--shadow);margin:10px 0}
+.bav{width:64px;height:64px;border-radius:50%;background:var(--hl);color:var(--btn-ink);display:grid;place-items:center;font:400 30px "DM Serif Display",serif;margin:0 auto 8px}
+.pcard h2,h3.sh{font:400 21px "DM Serif Display",Georgia,serif;margin:0 0 4px}h3.sh{margin:22px 0 8px}
+.acc{display:grid;gap:10px;background:var(--card);border-radius:24px;padding:12px;box-shadow:var(--shadow)}
+.acc .del{margin:0;text-align:center}
+#md{position:fixed;inset:0;z-index:35;background:var(--bg);display:none;overflow:auto;padding:max(24px,env(safe-area-inset-top,0px)) 22px 40px}
+#md.on{display:block}#md .in{max-width:440px;margin:2vh auto 0}#md h1{margin-top:6px}#md h2{font:400 21px "DM Serif Display",Georgia,serif;margin:20px 0 6px}
+#md dl{display:grid;grid-template-columns:96px 1fr;gap:10px 12px;margin:14px 0}#md dt{font-weight:600}#md dd{margin:0}
+#md .btn{width:100%;margin-top:14px}
+.spons{margin-top:22px;text-align:center;padding-bottom:6px}.spons small{display:block;color:var(--mute);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.logos{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;padding:6px 0}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logos img{filter:brightness(0) invert(1)}}
+.logos img{height:40px;width:auto;display:block}.usc{text-align:left;color:#1c2b6b;line-height:1.1}.usc b{display:block;font:700 26px Georgia,serif;letter-spacing:.04em}.usc span{font-size:10px}
+.phr{font:italic 400 15.5px/1.4 "DM Serif Display",Georgia,serif;color:var(--pri);margin:14px 6px 0}
+
+#md .in{max-width:440px;margin:0 auto}
+.mh{position:relative;overflow:hidden;background:var(--pri);color:var(--pri-ink);border-radius:28px;padding:24px 20px;min-height:132px;margin:4px 0 16px}
+.mh h1{margin:0 0 6px;font-size:clamp(26px,7vw,32px);max-width:66%;color:var(--pri-ink)}.mh p{margin:0;opacity:.88;font-size:14.5px;max-width:66%}
+.mh svg{position:absolute;height:auto}.mh .m1{width:78px;right:-6px;bottom:-8px}.mh .m2{width:64px;right:56px;bottom:-14px}
+.sec{background:var(--card);border-radius:22px;padding:16px 18px;box-shadow:var(--shadow);margin-bottom:12px;border-left:5px solid var(--hl)}
+.sec h2{font:400 20px "DM Serif Display",Georgia,serif;color:var(--pri);margin:0 0 6px}.sec p{margin:0 0 8px;font-size:15px}.sec p:last-child{margin:0}
+.it{display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:18px;padding:12px 14px;box-shadow:var(--shadow);margin-bottom:8px}
+.it i{font-style:normal;width:38px;height:38px;border-radius:12px;background:var(--btn);display:grid;place-items:center;flex:none;font-size:18px}
+.it b{display:block;color:var(--ink);font-size:15px}.it span{font-size:14.5px;color:var(--mute)}
+.callout{background:var(--btn);color:var(--btn-ink);border-radius:18px;padding:12px 16px;font-size:14.5px;margin:0 0 14px}
+.mf{position:sticky;bottom:0;padding:14px 0 max(4px,env(safe-area-inset-bottom,0px));background:linear-gradient(to top,var(--bg) 70%,transparent)}
+.mf .btn{width:100%;background:var(--pri);color:var(--pri-ink);margin:0;padding:15px 20px;font-size:16px}
+.rl{counter-reset:r;list-style:none;margin:0;padding:0}.rl li{counter-increment:r;display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:18px;padding:12px 14px;box-shadow:var(--shadow);margin-bottom:8px;font-size:15px}
+.rl li::before{content:counter(r);flex:none;width:26px;height:26px;border-radius:50%;background:var(--hl);color:var(--btn-ink);display:grid;place-items:center;font-weight:600;font-size:13px}
+.note{border-left:5px solid var(--hl);box-shadow:var(--shadow)}
+.okn{border-left:5px solid var(--pri);font-weight:500}
 </style>
 </head>
 <body>
@@ -147,26 +195,35 @@ a.row{text-decoration:none;color:inherit}
 <symbol id="leaf" viewBox="0 0 24 24"><path d="M12 21v-9M12 12c0-3 2-5 5-5 0 3-2 5-5 5ZM12 15c0-2.5-1.8-4.2-4.5-4.2 0 2.5 1.8 4.2 4.5 4.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </defs></svg>
 <div class="wrap">
-  <header><div class="hl"><button class="back" id="hb" aria-label="Voltar" hidden><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><div class="logo"><svg viewBox="0 0 24 24"><use href="#leaf"/></svg>Reflorir</div></div><button class="exit" id="exit"><svg viewBox="0 0 24 24"><use href="#leaf"/></svg>Saída</button></header>
+  <header><div class="hl"><div class="logo"><svg viewBox="0 0 24 24"><use href="#leaf"/></svg>Reflorir</div></div><button class="exit" id="exit"><svg viewBox="0 0 24 24"><use href="#leaf"/></svg>Saída</button></header>
   <main id="view"></main>
 </div>
 <nav><div id="nav"></div></nav>
 <div id="gate"></div>
-<div id="dis"><div class="top"><button class="back" id="back3" aria-label="Voltar"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><div><h2>Verde em Casa</h2><p>Guia prático de cultivo de plantas ornamentais</p></div></div><div class="in"><div class="tb" id="dtb"><button class="on" data-d="all">Todas</button><button data-d="sol">Sol</button><button data-d="sombra">Sombra</button></div><div id="dpl"></div>
+<div id="dis"><div class="top"><div><h2>Verde em Casa</h2><p>Guia prático de cultivo de plantas ornamentais</p></div></div><div class="in"><div class="tb" id="dtb"><button class="on" data-d="all">Todas</button><button data-d="sol">Sol</button><button data-d="sombra">Sombra</button></div><div id="dpl"></div>
 <h4>Calendário de rega</h4><table><tr><th>Planta</th><th>Verão</th><th>Inverno</th></tr><tr><td>Echeveria</td><td>10 dias</td><td>20 dias</td></tr><tr><td>Samambaia</td><td>2 dias</td><td>4 dias</td></tr><tr><td>Orquídea</td><td>5 dias</td><td>8 dias</td></tr><tr><td>Lavanda</td><td>6 dias</td><td>12 dias</td></tr></table>
 <h4>Dica do mês</h4><p>Adube com húmus de minhoca a cada dois meses na primavera e no verão, misturando 2 colheres de sopa ao substrato superficial.</p>
 <button class="close" id="back">Fechar guia</button></div><button class="corner" id="back2" aria-label="Fechar"></button></div>
+<div id="md"></div>
 <div id="toast"></div>
 <script>
 const $=s=>document.querySelector(s);
-const ic={home:'<path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',book:'<path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/>',scale:'<path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>',pin:'<path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',chat:'<path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4A8 8 0 1 1 20 12z"/>',go:'<path d="M9 6l6 6-6 6"/>'};
+const ic={home:'<path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',book:'<path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/>',scale:'<path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>',pin:'<path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',chat:'<path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4A8 8 0 1 1 20 12z"/>',go:'<path d="M9 6l6 6-6 6"/>',sprout:'<path d="M12 21v-9M12 12c0-3 2-5 5-5 0 3-2 5-5 5ZM12 15c0-2.5-1.8-4.2-4.5-4.2 0 2.5 1.8 4.2 4.5 4.2Z"/>',user:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>',flag:'<path d="M5 21V4h11l-2 4 2 4H5"/>',bm:'<path d="M7 4h10v17l-5-4-5 4z"/>'};
 const svg=n=>`<svg viewBox="0 0 24 24">${ic[n]}</svg>`;
-const tabs=[['home','Início','home'],['entender','Entender','book'],['direitos','Direitos','scale'],['rede','Rede','pin'],['jardim','Jardim','chat']];
+const tabs=[['home','Início','home'],['info','Informação','book'],['rede','Serviços','pin'],['jardim','Jardim','sprout'],['perfil','Perfil','user']];
 const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-let S={tab:'home',user:null,city:'',tag:'Todos'};
+let S={tab:'home',user:null,city:'',tag:'Todas',jt:'com',info:'entender'};
 const ls={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800)};
 
+const LOGO_UNI='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAAB5CAYAAAA09OSiAAAXiUlEQVR4nO3de5QcVZ3A8e+9U1PTPeBMMqBsDmdQQAnZNSSECaAJJCGYBYLLQwJC2E2AxFUUAYUVViQ83IVVWVdgA0LkIUYFVMKG4COETCQ5SAgmPFxIIsgaj6hAXuL0q+be/aOqJz09t7qrH8mA5/c5Zw50PW7d6nTfuo/fvQ1CCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIcTbUxYOLeDfVyC9LSD1NKCHO09CiOGlC3g3BLTb0r8C/s3DnTEhxDDphX0DUk+XFwzFvxxMGO48CiH2sBxMKJD+fVzBEP6lnh7ufAoh4jW97V+A0zTpFQo1qsqlewKYVb61F/YtwGkF/JsDUk+H/RTtNiD1eLPzKoSI5zUzsQA9B1L3JDnWYrcrvP0hoBf2nYx3Lnj/AHpa6XFq4P/0tCwcmoKXmplnIYSbqn5IMgF6PqTuqH6kWQf5W1diluxNagrARPL7JTnX0nd6KzzUeG6FENU0pVmRrGAwKw19U1eSPf4Z2g/qpGuzR/vDLbQvWol5wGJfq3YdhffeZuRXCFFdw4VD2G9QqWDoX9ZP3xGryZ65no6ZnYx8VeNfreDdAAre3UH6DEXhK9WuZWG/RvMrhEimocIhD1Og/QH3XrPO0Dd1Nbm5G+j4zF50va7xLleoEeVHKlIXryS422K3V8luVyP5FUIkV3fhkIPxivSS8u1h86DvzJVkj19Px8yoUDivUloKNTbsfyjcXuWy7fXmVwhRm7oKh9VwkCb9aHktwBLc0ktmzDOkOzrp2qzxLk+apkf62jUEN1U6RqHeVU9+hRC1q7lwWA6dR4UFw0Acg8W+Zuib+hT5/xrByF5NelGxTyE5Nf4lOMgSfKfCMR215lcIUZ+aC4dptC1WqNG7tvQv6yUzZj17H9dG18ugxtebmcPp+KQlv6je84UQzVNT4VDAuwFaZhZfW4I7VpKb3cnIhzT+1Y1nxjtvFWyw2I2NpiWEaEziwqEApyn8K4qvLcF31pD/Yicjn1CoaZXOrUUHe12gyFXsexBC7H6JCofVcBCk7yq+ttjXesl/pp2RjyvU2GZmSOHPjYKitg/da/uaeS0hRLxEcyuOJnU/g0Ym+lccCwc/18SCIZxrwauW/vWt0GrITAd4GrZn4M2PwI5mXUsIUV3VuRUB3lXgX1+6Law5ZMZ0MvKhepoUUa1gvaXwhCF4pp/sC5Ph1V7o2gTjAQ6BDe2MfEDBSIvaH2wrmMfGs+PWKL7ijwrza+h/bCXB3VJ4CNFcFQuHLBzq0f6ie2//stXk5iZpWlh4HfpXWfI/KZBZORlevQUObYPDWmjpgZbDFBxYWjvpJvf+qD9jIG1DcPcEdi5VtP9o8BXMOo/sxKp3K4RIrGKzwiN1X/zelpmT8L++hm3HuQoIi11pyT8yjr88moJNt0NPCxyj8W+/q6wgcPkNnDiOwkMKvzTdNxTaEeuge3Iwvg02VEpTCJFcbOEQ4F0CuqfSyQrv3ElAL9uO6WTkQ5b+Vw35JW+RXZWGfV6E036F98W7aDmh9ox5Mwu8taCNrpIhUpMBPdJ1vIYDqbFw8OHHSpVM5lLsyBkWAg9WObXDg5taFEeUbsxZFgBLPfhqi2J6+Uk5y6XAqippT/HhitJ89Vs2BfBxYFSbYlnpwdG+BUC14d8pGno0dGsYCWBgm4EtBtYBT4SbEpul4YCS1zsMPADsrCGNUqOB6R4crvWuADpjeNXACybMX9w9TgHek+Aa2Sh/fwA2U9v9DtDw+dLXBjYByxKmN2SBo92Rx0g7MF3DRA2HaE0KwBheD2A9sIIKnxtn4bAcOi2tC6p1SBRHFNKwz5FsO64X9n0Z/QmF/wVQh7TUczsDWk7IEHzGxz6/q1ZidwB7u45WdSxcoxT7KUV3yabulObmrGE1EDuF3IPrPM2pQ3bY8M3X8J6ydAFogztylqkV0tYpzX1AunRji2JHYAbyPChdT9HdAvvlDHF9P7PaFFe68lM2VJUJDPcHcDOwJSatoo6U5maGvudXZw0fBZ6tcn6pGW2aKxV80LVTayYV/9/CCznDDcDPSo/xNZdqdh2XUCYw/DSAW2vNr6+5onyjsbyYt5xMlcIxpVlYw7UCA08FhkcMfBdIOlrX4cGXPM1ZlH2WALQGD04Fro3e02twPLScQ5lT8a5wzZ7cxayEvjN7ybzvbvL3ttJx1Vo6HyxAIdyvDkl4ExX9Bk60FAYWdzH0/9qikzwhGuEBFfPfohlXT8JK0eXDXcQPIX8Axz9m1XThUNd2D76a0ix0FQwOaU8zN6VZW/5kLKdhPu7COO0rbklwLYB2D+5MaRbHFQzlFHwwpVnswfeBRkPp057m1JTmMQ+uSnqSB+e7tmvFGA++1GCehlxOwyRfc0ObYr2GeQnOmdGmeNrTzCXBZyl6T3/gwZ2UfS6HfEiXQye0frJ8u8W+Zsnf+Av6Dv4F2XnP0DGxk67Nh9O1XOOdp2g5o5ORT4zGfD8gd1GCm6jKw5s5jre+V3w9gexvFeoA17EG/tSMa0bampjWIFrTo+GaJic75IuqYV70Aak5LV9zMRC7BmirYnbcPq0YQ1jNr6S9TbPMWftKkkHNdA+uq+fcmPQurlYgRro9PbS5WJLOWeymmcNK0eVrbvDhXmIeLhrmpTSLlaLmpQ08zal+2DQayP+Qi0xDn1laawhDmbNze8mMWYf3ZBsjvtVG18vh2gyDJ1cp1Fifkc+MJdWXJzeThr+w+ugUbApHO+BJ+B2o/V1HWvhzY9fac3zNp4CP7sZL6FZF4hmx5fKG64hv+syoVhPxY56uA/s1301aW3Cxli0BNByuX5anK6DyfUU1pkrSGs5pXq4cedCc5MPdjl0zfM0NDabd44U12/D10ENaTwn/a9ZZ+k7vJXPUM6T3KS7rBnpqpQso1AiP9ocPZ6/J3eQ+bLHr68+uGnE79ED/KoCp8IaNKRyehN/Wf509L6X5b6p8GBtwjOvpYS1b84Yrs4YzsobzA8M3jGXQUHVgWGEgdvJbXLW6lNbMIKbmoWFelf6BNwPDkrzhtsCwBHizbH8mZzmbBB2fxvKihRcsvBDdZ3la5Xmr9OXXrYqzql2zVXFhtWNcrGWrtWwFgmrHas1JZU2MjrYqzTljWBcYlgSGFUAm7jhPM72YtqPdqNrDxVr4WQd7f66T1rsq9z/E3ABtN3XifegAdsz6LfrTitZLa00DoAWOseR/AqnRy6Ezbsn7qfBGPekPo7SvWJwPOygb6ZEeQod9F0MULHeUfvEDWIrly1imeHAa8EYA/1kh6YrV6hKehnMMlM+RqVSjCbKG64Hbid4PQ9gjR/hUvFBBZ87wBaqPzACQt5yFLakBWQBG+ZrbXAWUBxPz8cl9LEl1XSm6sUyh+qjUrmxZtuRs9CNPYR47CEetLtQa54hhq+LynOUuwGi4LC5vgWFFAJdSUhMMDFrDpb7mMhxlQDHtITUHj+xx4WItxbUeay8Yior9ELMxP6q3mdGCN34cmTXAG8fCwa5j3qmzOKNOrEpfxroY8F3bPTged0feqgAuCeDLVOgRr/BkHfIk8jXzGVozjf2CZQ2fBRbiLih/ljecGo3IrI3LX0Kv5Q3OPjGtOTDupDbtrBE4n8DVmlUJ7ASW5uHEvOE21wHR+/gxQPsxfUtRwXAOQ5uIxsBN0Xsem/agf7wcjA9gVobMw5bCzcW2fiMUauzzdL1YbGZA/09qS6HY71B4ogXtjMRUmHfsb1l4mtlUH/uulfPfTWt6UpqNHnw/qjqOdh0Xw1mttvBCYHAtMLwPMLN0gw8nuxKOqrrVYkuaqdpQbblxrj6SvOEeY1hXvr1Ss6pWBq52XQPAgxnAMbhHJYIAPkHlWumDxvBoXNoDVYow6Mn/OsBkzDrou3Ulb31gCoxfT8ccRctpjdQiwmaGf3Ir287cRLDMw7++WpRkSI1YDu8q8Na9Fv8L7tiLfueb906R0tyUNTzXxCR/Sth2dQ03elHTYDqEbd1+y4+D8PdAKlWFnU/9gmGxgZ96cHH5Pl9zQd6wtPhaKZyFe1DSCRZpT9KxZ+A56qtJHOlMz/Ab13YPnGugGlich+dTDKn6ex5cENXEGpaHhamh7xEtiiOMdf/IU2B4hAT9Mnm4KwUnudL2AMJfvfZKqlq6B1L3TMVuh/5HDmfnIh/m3QHHjaNjhqLlhHqmaivUtHZGbh5H9rKdZHq24N1KgujJl2D/i+B/C7Q4h8gswa9qzctwMLAmpjMu3ab4Xs4yZAi5TjvzhjujUZGKlKLLU8z2YHYUyHMZji9cTLU6KAbnuO4tej2aqI+gwijHL8pedybpec8bbjOVC4cOBk/I2wc4uk25v7QG1rjSiIYoBx8bPs03EtZCMpQ9vT3NuYHh32lOf5Lz4acU+2rrfk+jCMgknL9ZqxTdOsC7RA0qGEoOQI1QeOdq2nsLpN88D3/OEex8egfbjsmx9WBDZp6l/we1ND8UaoQmvWgEI5YcQrAgIHc22E2VzmmFvXth38HL0+2yJgytfdvLGxbGVeOUottXfK1Z1zJwTWBYXMs5WjEmpVnG0GaOs1odPZ36APIx1/J29apXWjuk3pDrilKa1SnN/5X8/TIKCnP1ewRBGENQ7lwcNbD8rid5X2D4Ufl+HM2qBsTNOG6tcE7S72R8H5OldUGSFIoFBbQ/MI327UeTuv8ICqPGs+PWHWz9QLGwMOHvTzxfPUU9tY2ul8fRMaOb/ElR4JSzw7IAb4W/pTmUxb429e0zUpGtdkAePmWtu80bBRA1iwngkqzhjLg2a5woNHqgII6rVgdhVF3RD3F00JUEBhnih+nKO0n/Ukt+myEaKRny79KmnFGJGdg1xyUIa09D+NQ3rOmwj2ujtexkICp5sLJ5L5XERZoGGvhjwkTKL98D/vWa9t6osFg0gcL7J7BzaR/bjtvO1hHj2DrVkPu8Ibgb7AZnKniXd9K1eRzpvbrJfTggd9Hg2Ai76SJ4ydL6L+589K+oL/+Aii2ROyueZ2P35xJctS8ap686nt0kq/JwYtYwIWtYEFWdY8e5I57HQJPEWa2O0ngvYS1jFvAxCy87jhsIDLI2NrCqvLm4MzB8A3izZPx/dwmyhgXgnPMwxdUUiu5zJrvu/b043tNoGLKWTl8nDX/v2m4trwTE9pMcnzB5Z1PdWDZ74XqNSX4Atxo9TeFPA5/JhE90hVl7BLl1lmBpP3wlBZtWw/smwogNpA+HlgNAdyvUuxSp2Z34J4wld9+HyM5YDp0vw+iDYWMB79/i4hsUwc/rzbGFHa4OTg8mBfG95x0V2s5JC9qNWcNna5yE06gtwMJ8OOtUAz0ezIqdnKOYEI25O6vVQDpp/j3FP+Uti/otP/ccodflHZcAAXw5MLv6BlKq8ZGzclF8wdnExE2UFJCDRPMRkt07zAuoP1oVaI8LrArC/gJXP0lYMBmOpEqHbVztxlie8jzMnQHmE9WmZ9cq/DK3nAItpyh8PMJHpcVuVJhfT6D/FUXhFUuwwcJWC3+2UfsnB+M1HDgN7+8srd+O62sACDB19zcEhud87QiG0ZweGG7CUc2sMLkmABI0pwY8GBgmRUOZu8uRhL8vWj6d2ABrA1gbGL6T0jxWfqKKZr/GVKtrohVjsBwZwKMeQ+836ri8EPfTu25RhOVfgL9xBW9FAUtxtcBRCQO+KvI0ZwVhzaSe9U87fM23VUwkrQmbcs9ayxbnLGDF7TnLKcQM3Wq4Li7IKoAHvfAi2cs07b11ZL5m4Re9ZbQaeO1XXI6q0j6LfS2FeygnCQOrcT8d0m2Kh3OWK4DHwkPp9uCzcZOZjGEDNfZMB/A5bZnQ5L4GADy4ytMDw4tv5g1fi1lvwd1PotiBdVer68zP/ADmx32QU5prA8OBAVzvyGO1iVxO0fyL1wC04ceuL0L0Beqh7N/OgwvquaZDOooWjQ1JV4p27KDh1f08ODauVgcDIyvPAuQsi1KKax3pdrfBYwXLV8umfI/z4Mq4wi/qo1o78N0r4N8cN2rxdmUJ7mgl/88NJKHbFC8mCIuNixkYkDdcWfwA+HCv1kPHjrOG2ZStRUC4hsQaKkyvjebcTwNGpbQ7HiJrBk2CmxVT7Q2MYYOBjQZ26rA/4XTXtQPDPSQPl04iyBpGA1NSeuiYvSOPv9PgK8XYuAIqGsq82tcscQ0RZw2HsSs6cHRK04tr5CFKp2RT0s9FItEQ8bEAKd2U5lEma/gIu5pD2lf0VnvIWMtWpeig8mc5yBpOAJ4dOKiX/Jem0nJGXNv+7SlfY7TlECZn+Yar1C1TsWCwli3GEaSS0Jas4dNVvjC1GBeNNrh40ZTxqk3IAH4ek6dM1nBGpXN9uNbxlPY0zDdwU2C4p8J08sR5rNHGvOFrroVafM2nsuGwbLF97gz4MoZ1+XDVrThp12I9xWYVjYd+Q/jl/TSD+0lM3jI/pVhefu1SSQq7aNTmWSgZe/4I7LBkzq4/z3teLzzehGQWxgS/JJXJWc6jsWCXpXEx9HXYbMyQ2klNAsNiD/eCNtGY/tpKf/mYgrI43yKAy6P+gLpZy1YDj9RyjoGvl89CLWpT3E70fYibGxHdV6V7XxUT84BXfbp3EpmsYQ4M7ryNbIwK7WojUbHyhhsp6fcZFJjiwypL/sZ6E9+z+pc1azn6vOGcuOCkSqxla/QPknSZse1xOwxckyAe4Y9UHwLty8OcrOHCuHiKSgLD4gD+tUXxj8797rUEyv0wZvhxIDAogPl5w5XU8WEODEtylonU/iQ2ectFON5Dpej24D+A0a6+ieh+flg1bzHvj6c5mfrnWwSBYUnWcBRDm6Wl1mYNk2qNa4k+x+eXz6IdErXWSvBFMO+AuQqFZk7UGfhCxT1ZymTyhttq+YBGk4sqHWvycH6VMX2TN4mjKB/MWXqyhguja1csVAysyRrOCOASYKazWh2+N0kKQlOw3O/a4etdHX0GFmUNRxVjGiolaC1bA8M9WcPkIHwK1xtV+WzW8HFXwelp5nq4m5j9lv8hWe3wWQsvOLZ7NS4E82ZgWJE1LMgaJkT3HLuuaYktUVzLhdUKCWvZkjfcmLMcjqM24hwMWA0HHUX6mUYmWu1uK+kbsRt/yGYUMDmKMuvUYTtuh4E/mHBs+Xkqf1BGMTjyrI/kMwHLz3Wd38HQp1C1aeuacJ2HQ3Q4vIkJ378/Ed5TX9mxKUcaWZI3n+LSgPhhvdHAYcXoPhPWKl4nnGBV6f7irlVt+NC1pFtx1L1cM+49G7O9kWtVMwoYC7w/+hxjwoWRqr2n8SOFAcyC9gealMEm61/mkXNO/xVCNEfsZBgPHrQESVcS3qMsuW8Ndx6E+GtX7acpdEDqqWZHTzbCYre3ktmHJi+tJoQYrNI0WgCzmuyJFpukI2QP6b8PKRiE2O2q/so2QB6m7Knw6moC+sY0EjIthEimWs0BCOMfIDt3N+clAbNSCgYh9oxEhQOAh7l3uDsoDdlqYc5CiCZJ1KwoFdC2JJyKvWdZ7MZWMs7fhBRCNF/imkPRSnJzhiOCUpFr6Ke+hBC1qbnmANAL+04ivbrSIizNJLUGIfa8mmsOEP703FNkTtpzQ5yZK/fMdYQQRXXVHIqycGgL6Sd37xwMs84jO3H3pS+EcKmr5lCUgpcMmekWu71J+Rmin2wz5sELIWrUUOEA0Aa/3F0FhCW4pQ02NDtdIUR1DTUrSoUrRqcfbdYyc1En5N8iodJCDIuGaw5FbbDhKTKTLbbaugKJ9JM5FSkYhBg2TSscACbDK2vITG48DqLvTAmTFuKvky7gfzOg3db+p6UDUoi/dgF6ToH0thoKhjnDnWchxB6yGg4KaFtSqVAokH4pBxOGO69CiGGQgwkF/G8WSP8+KhC2BaQej2oLTe37EEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEG9z/w9wVzSbnhSjkQAAAABJRU5ErkJggg==';
+const LOGO_USC=''; /* cole aqui o link ou base64 da logo da USC */
+const phrases=['Juntas, construímos uma rede de apoio para as mulheres.','Pedir ajuda é um ato de coragem.','Você merece viver sem medo.','A culpa nunca é da vítima.','Cada passo, por menor que seja, conta.','Você é mais forte do que imagina e não precisa caminhar sozinha.','Seu valor não depende de ninguém.','Reflorir uma mulher é fortalecer todas nós.','Recomeçar é possível, e há uma rede pronta para te apoiar.','Sua voz importa. Sua segurança também.'];
+const spons=()=>`<div class="spons"><div class="logos"><img src="${LOGO_UNI}" alt="Unisagrado">${LOGO_USC?`<img src="${LOGO_USC}" alt="USC">`:''}</div><p class="phr">${pick(phrases)}</p></div>`;
+const PM={};
+const modal=h=>{const m=$('#md');m.innerHTML='<div class="in">'+h+'</div>';m.classList.add('on');m.scrollTop=0};
+const rr=()=>{const m=$('#msg')?.value;render();if(m&&$('#msg'))$('#msg').value=m};
+const official=[{id:9001,tag:'Reflorir',f:'🌸',n:'Reflorir',t:'Bem-vinda! Aqui você encontra informação segura e apoio, no seu tempo. Você decide o que quer compartilhar.',h:48,ago:'1 d'},{id:9002,tag:'Reflorir',f:'🌸',n:'Reflorir',t:'Você não precisa provar nada para pedir ajuda. O Ligue 180 é gratuito e funciona 24 horas.',h:63,ago:'2 d'},{id:9003,tag:'Reflorir',f:'🌸',n:'Reflorir',t:'Se for seguro, guarde provas como prints, áudios e fotos. Nunca se coloque em risco para conseguir.',h:37,ago:'4 d'}];
 const flowers=[['🌷','Tulipa'],['🌻','Girassol'],['🌼','Margarida'],['💮','Jasmim'],['🌹','Rosa'],['🌸','Cerejeira'],['🌺','Hibisco'],['💐','Violeta']];
 const adj=['Serena','Corajosa','Luminosa','Forte','Gentil','Livre'];
 const pick=a=>a[Math.floor(Math.random()*a.length)];
@@ -210,23 +267,24 @@ const services=[['CRAS','Benefícios, CadÚnico e acompanhamento de famílias'],
 
 const fixE=e=>({'🪻':'💮','🪷':'🌸'}[e]||e);
 const FC={'🌷':'#FADADD','🌻':'#FCEBB5','🌼':'#FFF3C4','💮':'#E4D9F7','🌹':'#F8D0D5','🌸':'#F9D9EA','🌺':'#FAD3CB','💐':'#E7DDF5'};
-const seedTx=[['Desabafo','Hoje consegui, pela primeira vez, falar em voz alta o que estava acontecendo. Demorou, mas já é um começo.','2 h'],
-['Dúvida','Alguém sabe se dá para pedir medida protetiva sem ter feito boletim de ocorrência? Descobri aqui que dá. Fica a dica.','5 h'],
+const seedTx=[['Apoio','Hoje consegui, pela primeira vez, falar em voz alta o que estava acontecendo. Demorou, mas já é um começo.','2 h'],
+['Direitos','Alguém sabe se dá para pedir medida protetiva sem ter feito boletim de ocorrência? Descobri aqui que dá. Fica a dica.','5 h'],
 ['Conquista','Comecei um curso gratuito esta semana. Pequeno passo, mas é meu.','1 d'],
-['Desabafo','Ainda tenho dias difíceis, mas aprender sobre meus direitos me deixou mais tranquila.','1 d'],
+['Apoio','Ainda tenho dias difíceis, mas aprender sobre meus direitos me deixou mais tranquila.','1 d'],
 ['Conquista','Fui ao CRAS e fiz meu CadÚnico. Fui bem atendida, sem julgamentos.','2 d'],
-['Dúvida','Alguém já ligou para o 180? Como é o atendimento?','3 d'],
-['Conquista','Voltei a estudar pelo EJA. Primeira aula amanhã!','4 d']];
+['Direitos','Alguém já ligou para o 180? Como é o atendimento?','3 d'],
+['Conquista','Voltei a estudar pelo EJA. Primeira aula amanhã!','4 d'],
+['Amizade','Alguém quer trocar uma conversa? Estou precisando de novas amizades por aqui.','5 d']];
 /* perfis de flor aleatórios: sorteados a cada vez que o app abre */
 const seed=seedTx.map((x,i)=>{const f=pick(flowers);return{id:i+1,tag:x[0],f:f[0],n:f[1]+' '+pick(adj),t:x[1],h:5+Math.floor(Math.random()*40),ago:x[2]}});
 const heart='<svg class="ht" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.2-9.4C1.8 8 3.6 5 6.8 5c1.9 0 3.5 1 5.2 3 1.7-2 3.3-3 5.2-3 3.2 0 5 3 4 6.1-1.7 4.8-9.2 9.4-9.2 9.4z"/></svg>';
-const tagsAll=['Todos','Desabafo','Dúvida','Conquista'];
+const tagsAll=['Todas','Apoio','Amizade','Direitos','Conquista'];
 
 function home(){return `<div class="hero"><h1>Olá, ${S.user.n.split(' ')[0]}</h1><p>Você está em um espaço seguro e anônimo.</p><div class="art"><svg class="fl a1" viewBox="0 0 100 100"><use href="#lav"/></svg><svg class="fl a2" viewBox="0 0 100 100"><use href="#daisy"/></svg><svg class="fl a3" viewBox="0 0 100 100"><use href="#tulip"/></svg></div></div>
 <a class="sos" href="tel:190"><div><b>Estou em perigo agora</b><span>Toque para ligar para a Polícia Militar</span></div><i>190</i></a>
 <div class="sos2"><a href="tel:180">Ligue 180<small>Central da Mulher · 24 h</small></a><a href="https://wa.me/5561996100180" target="_blank" rel="noopener">WhatsApp<small>(61) 9610-0180</small></a></div>
 <div class="grid">${[['entender','b','rosette','Entender','Os 6 tipos de violência'],['direitos','a','rose','Meus direitos','Lei e medidas protetivas'],['rede','a','orchid','Serviços','CRAS, CREAS, DEAM'],['jardim','b','daisy','Jardim','Apoio entre mulheres']].map(r=>`<button class="tile ${r[1]}" data-go="${r[0]}"><svg class="fl" viewBox="0 0 100 100"><use href="#${r[2]}"/></svg><b>${r[3]}</b><small>${r[4]}</small></button>`).join('')}</div>
-<div class="endnote"><div class="note">Precisa sair da tela rápido? Toque em <b>Saída</b>. Para voltar, use o botão <b>Fechar guia</b>.</div></div>`}
+<div class="endnote"><div class="note">Precisa sair da tela rápido? Toque em <b>Saída</b>. Para voltar, use o botão <b>Fechar guia</b>.</div></div>${spons()}`}
 
 function entender(){return `<h1>Entender a violência</h1><p class="mute">A violência vai além da agressão física. Reconhecer é o primeiro passo.</p>${types.map(t=>`<details><summary>${t[0]}</summary><div><div class="lbl">O que diz a lei</div><p>${t[1]}</p><div class="lbl">Exemplos</div><p>${t[2]}</p></div></details>`).join('')}<div class="note">Se você se reconheceu em algum destes exemplos, a culpa não é sua.</div>`}
 
@@ -239,23 +297,56 @@ function rede(){return `<h1>Serviços perto de mim</h1><p class="mute">Digite su
 <div class="svcs">${services.map(s=>`<a class="row" data-q="${s[0]}" target="_blank" rel="noopener" href="#"><span class="ic">${svg('pin')}</span><span><b>${s[0]}</b><small>${s[1]}</small></span><span class="ch">${svg('go')}</span></a>`).join('')}</div>
 <div class="note">Sem internet ou sem saber a cidade? Ligue <b><a href="tel:180" style="color:inherit">180</a></b>, a Central de Atendimento à Mulher, gratuita e 24 horas.</div>`}
 
-function jardim(){const posts=ls.get('rf_posts',[]).map(p=>({...p,own:true})).concat(seed).filter(p=>S.tag==='Todos'||p.tag===S.tag);const liked=ls.get('rf_liked',[]);
-return `<h1>Jardim</h1><p class="mute">Um espaço de apoio entre mulheres. Não compartilhe nome, endereço ou telefone.</p>
-<textarea id="msg" maxlength="500" placeholder="Escreva com carinho, no seu tempo…"></textarea>
+function pcard(p,off){const lk=ls.get('rf_liked',[]),sv=ls.get('rf_saved',[]).some(x=>x.id===p.id),cm=ls.get('rf_cm',{})[p.id]||[];PM[p.id]=p;
+return `<div class="post"><div class="who phd"><span class="av" style="background:${FC[fixE(p.f)]||'var(--peach)'}">${fixE(p.f)}</span><span class="nm">${esc(p.n)}<br><small style="margin:0">${p.tag} · ${p.ago}</small></span>${off?'':`<button class="icb" data-rep="${p.id}" aria-label="Denunciar">${svg('flag')}</button>`}</div>
+${S.rep===p.id?`<div class="rmenu">Por que denunciar?<br>${['Ofensivo','Dados pessoais','Spam'].map(r=>`<button data-repok="${p.id}">${r}</button>`).join('')}</div>`:''}
+<p>${esc(p.t)}</p>${off?'':`<div class="hts"><span>#${p.tag.toLowerCase()}</span><span>#apoioemocional</span></div>`}
+<div class="acts2"><button class="hug" data-hug="${p.id}" aria-pressed="${lk.includes(p.id)}">${heart}${p.h+(lk.includes(p.id)?1:0)}</button><button class="cmb" data-cm="${p.id}" aria-label="Comentários">${svg('chat')}${cm.length}</button><button class="svb" data-sv="${p.id}" aria-pressed="${sv}" style="margin-left:auto">${svg('bm')}Salvar</button>${p.own?(S.del===p.id?`<button class="del on" data-del="${p.id}">Confirmar exclusão</button><button class="del" data-delno="1">Cancelar</button>`:`<button class="del" data-del="${p.id}">Excluir</button>`):''}</div>
+${!p.own&&!off?`<button class="blk" data-bl="${esc(p.n)}">Bloquear ${esc(p.n)}</button>`:''}
+${S.cm===p.id?`<div class="cms">${cm.map(c=>`<div class="cm"><b>${fixE(c.f)} ${esc(c.n)}</b><br>${esc(c.t)}</div>`).join('')||'<p class="mute">Seja a primeira a comentar.</p>'}<div class="row2"><input id="ci" maxlength="300" placeholder="Comentar como ${esc(S.user.n)}" autocomplete="off"><button class="btn" data-cs="${p.id}">Enviar</button></div></div>`:''}</div>`}
+function jardim(){const hid=ls.get('rf_hid',[]),blk=ls.get('rf_blk',[]);
+const seg=`<div class="seg"><button data-jt="com" aria-pressed="${S.jt==='com'}">Comunidade</button><button data-jt="ref" aria-pressed="${S.jt==='ref'}">✦ Posts da Reflorir</button></div>`;
+if(S.jt==='ref')return `<h1>Jardim</h1>${seg}${official.map(p=>pcard(p,true)).join('')}`;
+const posts=ls.get('rf_posts',[]).map(p=>({...p,own:true})).concat(seed).filter(p=>!hid.includes(p.id)&&!blk.includes(p.n)&&(S.tag==='Todas'||p.tag===S.tag));
+return `<h1>Jardim</h1>${seg}<p class="mute" style="margin-top:10px">Um espaço de apoio entre mulheres. Não compartilhe nome, endereço ou telefone.</p>
+<textarea id="msg" maxlength="500" placeholder="Nova publicação: escreva com carinho, no seu tempo…"></textarea>
 <div class="chips" id="ptags">${tagsAll.slice(1).map((t,i)=>`<button class="chip" data-ptag="${t}" aria-pressed="${i===0}">${t}</button>`).join('')}<button class="btn" id="send" style="margin-left:auto;padding:8px 20px">Publicar</button></div>
 <div class="chips">${tagsAll.map(t=>`<button class="chip" data-f="${t}" aria-pressed="${S.tag===t}">${t}</button>`).join('')}</div>
-${posts.map(p=>`<div class="post"><div class="who"><span class="av" style="background:${FC[fixE(p.f)]||'var(--peach)'}">${fixE(p.f)}</span>${esc(p.n)}<small>${p.tag} · ${p.ago}</small></div><p>${esc(p.t)}</p><div class="acts"><button class="hug" data-hug="${p.id}" aria-pressed="${liked.includes(p.id)}">${heart}Abraço · ${p.h+(liked.includes(p.id)?1:0)}</button>${p.own?(S.del===p.id?`<button class="del on" data-del="${p.id}">Confirmar exclusão</button><button class="del" data-delno="1">Cancelar</button>`:`<button class="del" data-del="${p.id}">Excluir</button>`):''}</div></div>`).join('')}`}
+${posts.map(p=>pcard(p,false)).join('')||'<p class="mute">Nenhuma publicação por aqui.</p>'}`}
+function info(){return `<div class="seg"><button data-it="entender" aria-pressed="${S.info==='entender'}">Entender</button><button data-it="direitos" aria-pressed="${S.info==='direitos'}">Direitos</button></div>${S.info==='direitos'?direitos():entender()}`}
+function perfil(){const u=S.user,sv=ls.get('rf_saved',[]),bk=ls.get('rf_blk',[]);
+return `<div class="pcard"><span class="bav">${u.n[0]}</span><h2>${esc(u.n)}</h2><p class="mute" style="margin:0">Este é o seu pseudônimo no Jardim. Não pedimos nome, e-mail, telefone nem localização.</p></div>
+<h3 class="sh">Publicações salvas</h3>${sv.length?sv.map(p=>`<div class="post"><div class="who"><span class="av">${fixE(p.f)}</span>${esc(p.n)}<small>${p.tag}</small></div><p>${esc(p.t)}</p><button class="del" data-sv="${p.id}" style="margin:0">Remover</button></div>`).join(''):'<p class="mute">Você ainda não salvou nada. No Jardim, toque em Salvar para guardar uma publicação aqui.</p>'}
+<h3 class="sh">Perfis bloqueados</h3>${bk.length?bk.map(n=>`<div class="row" style="margin-bottom:8px"><b>${esc(n)}</b><button class="del" data-ub="${esc(n)}">Desbloquear</button></div>`).join(''):'<p class="mute">Você não bloqueou ninguém.</p>'}
+<h3 class="sh">Conta</h3><div class="acc"><button class="btn" data-rules="jardim">Ver regras do Jardim</button><button class="btn" data-rules="reflorir">Ver regras do Reflorir</button><button class="btn" id="exit2">Saída ×</button>${S.dacc?`<button class="del on" data-dacc="1">Confirmar: apagar minha conta</button><button class="del" data-dacc="0">Cancelar</button>`:`<button class="del" data-dacc="1">Excluir conta</button>`}</div>`}
+const RULES={jardim:['Jardim','Respeite todas as mulheres: sem ofensas, julgamentos ou discriminação.','Nunca compartilhe nome, endereço, telefone ou dados de outras pessoas.','Não publique conteúdo violento, golpes ou propaganda.','Use Denunciar quando algo não estiver certo e Bloquear para não ver um perfil.','Seus comentários continuam visíveis se você excluir a conta.','Em perigo agora? Ligue 190. Para orientação, ligue 180.'],reflorir:['Reflorir','O Reflorir é um espaço de informação e acolhimento, sem julgamentos.','Não pedimos nome, e-mail, telefone nem localização.','O app não substitui atendimento policial, jurídico, psicológico ou de saúde.','Você decide o que compartilhar e pode excluir sua conta quando quiser.','Evite guardar a chave de acesso onde outra pessoa possa encontrá-la.']};
+function jclick(b){const d=b.dataset,L=k=>ls.get(k,[]);
+ if(d.jt){S.jt=d.jt;rr();return 1}
+ if(d.it){S.info=d.it;render();return 1}
+ if(d.rep){S.rep=S.rep===+d.rep?null:+d.rep;rr();return 1}
+ if(d.repok){ls.set('rf_hid',L('rf_hid').concat(+d.repok));S.rep=null;rr();toast('Denúncia enviada. Obrigada por cuidar do Jardim.');return 1}
+ if(d.cm){S.cm=S.cm===+d.cm?null:+d.cm;rr();return 1}
+ if(d.cs){const id=+d.cs,t=$('#ci').value.trim();if(t.length<2){toast('Escreva um comentário');return 1}const c=ls.get('rf_cm',{});(c[id]=c[id]||[]).push({n:S.user.n,f:S.user.f,t});ls.set('rf_cm',c);rr();toast('Comentário publicado');return 1}
+ if(d.sv){const id=+d.sv;let s=L('rf_saved');if(s.some(x=>x.id===id)){s=s.filter(x=>x.id!==id);toast('Removida das salvas')}else{s=s.concat([PM[id]]);toast('Publicação salva no Perfil')}ls.set('rf_saved',s);rr();return 1}
+ if(d.bl){ls.set('rf_blk',L('rf_blk').concat(d.bl));rr();toast('Perfil bloqueado');return 1}
+ if(d.ub){ls.set('rf_blk',L('rf_blk').filter(x=>x!==d.ub));render();return 1}
+ if(d.rules){const r=RULES[d.rules];modal(`<div class="mh"><h1>Regras do ${r[0]}</h1><p>Para um espaço seguro e acolhedor.</p><svg class="m2" viewBox="0 0 100 100"><use href="#lav"/></svg><svg class="m1" viewBox="0 0 100 100"><use href="#tulip"/></svg></div><ol class="rl">${r.slice(1).map(x=>`<li><span>${x}</span></li>`).join('')}</ol><div class="mf"><button class="btn" data-mc="1">Entendi</button></div>`);return 1}
+ if(d.mc){if(d.mc==='j')ls.set('rf_jok',1);$('#md').classList.remove('on');return 1}
+ if(d.dacc){if(d.dacc==='1'&&S.dacc){try{Object.keys(localStorage).filter(k=>/^(rf_|reflorir_)/.test(k)).forEach(k=>localStorage.removeItem(k))}catch(e){}rec=null;S.user=null;S.dacc=false;gate(null,'Conta excluída.');return 1}S.dacc=d.dacc==='1';render();return 1}
+ return 0}
+function jwelcome(){modal(`<div class="mh"><h1>Bem-vinda ao Jardim!</h1><p>Um espaço de apoio entre mulheres.</p><svg class="m2" viewBox="0 0 100 100"><use href="#lav"/></svg><svg class="m1" viewBox="0 0 100 100"><use href="#tulip"/></svg></div><div class="sec"><p>O Jardim é um recurso do Reflorir que permite realizar publicações e comentários. Todas as publicações e comentários feitos no Jardim são anônimos, e é utilizado apenas um pseudônimo de flor.</p><p>Se você excluir sua conta, seus comentários continuarão visíveis para outras pessoas que usam o Jardim.</p></div><div class="callout">Compartilhe experiências e apoie outras mulheres.</div><div class="it"><i>🌷</i><div><b>Escolha um tema</b><span>use os filtros no topo do Jardim.</span></div></div><div class="it"><i>📖</i><div><b>Leia no seu tempo</b><span>as publicações aparecem só com pseudônimos de flores.</span></div></div><div class="it"><i>✍️</i><div><b>Publique</b><span>escreva no campo “Nova publicação”, escolha a categoria e toque em Publicar, sem dados pessoais.</span></div></div><div class="it"><i>💗</i><div><b>Curta</b><span>o coração para curtir e Salvar para guardar em Perfil › Publicações salvas.</span></div></div><div class="it"><i>💬</i><div><b>Comente</b><span>o campo abre dentro da publicação e mostra o seu pseudônimo.</span></div></div><div class="it"><i>🚩</i><div><b>Denuncie ou bloqueie</b><span>use a bandeira na publicação ou “Bloquear”.</span></div></div><div class="mf"><button class="btn" data-mc="j">Participar do Jardim</button></div>`)}
+function welcome(){modal(`<div class="mh"><h1>Bem-vinda, ${S.user.n.split(' ')[0]}!</h1><p>Você está em um espaço seguro e anônimo.</p><svg class="m2" viewBox="0 0 100 100"><use href="#lav"/></svg><svg class="m1" viewBox="0 0 100 100"><use href="#tulip"/></svg></div><div class="callout">Evite guardar o código em um lugar onde outra pessoa possa encontrá-lo.</div><div class="sec"><h2>Sobre o app</h2><p>O Reflorir é um aplicativo feito de mulheres para mulheres de todas as idades, origens, raças, religiões, orientações e identidades, com ou sem filhos, em qualquer cidade e em qualquer situação. Aqui você é recebida sem julgamentos, no seu tempo, e decide o que quer compartilhar.</p><p>Este é um espaço destinado para você se informar sobre seus direitos, entender as formas de violência, encontrar serviços de apoio na sua cidade e acessar contatos de emergência, sem precisar se identificar.</p></div><div class="sec"><h2>Nossa comunidade</h2><p>Para além de seus direitos, oferecemos o Jardim, um lugar para trocar apoio com outras mulheres, usando pseudônimos de flores. Você pode publicar, comentar, mencionar outras usuárias, curtir, salvar, denunciar e bloquear perfis. Na primeira vez que entrar, você verá o aviso da comunidade.</p></div><div class="mf"><button class="btn" data-mc="1">Começar</button></div>`)}
 
-const views={home,entender,direitos,rede,jardim};
-function render(){$('#view').innerHTML=views[S.tab]();$('#hb').hidden=S.tab==='home';updLinks();$('#nav').innerHTML=tabs.map(t=>`<button data-go="${t[0]}" ${S.tab===t[0]?'aria-current="page"':''}>${svg(t[2])}${t[1]}</button>`).join('');}
-function go(t){S.tab=t;render();scrollTo(0,0)}
+const views={home,info,rede,jardim,perfil};
+function render(){$('#view').innerHTML=views[S.tab]();updLinks();$('#nav').innerHTML=tabs.map(t=>`<button data-go="${t[0]}" ${S.tab===t[0]?'aria-current="page"':''}>${svg(t[2])}${t[1]}</button>`).join('');}
+function go(t){if(t==='entender'||t==='direitos'){S.info=t;t='info'}S.tab=t;render();scrollTo(0,0);if(t==='jardim'&&!ls.get('rf_jok',0))jwelcome()}
 
 document.addEventListener('click',e=>{
- const b=e.target.closest('button');if(!b)return;
+ const b=e.target.closest('button');if(!b)return;if(jclick(b))return;
  if(b.dataset.go)go(b.dataset.go);
  else if(b.id==='hb')go('home');
  else if(b.id==='loc'){if(!navigator.geolocation)return toast('Localização indisponível neste aparelho');navigator.geolocation.getCurrentPosition(p=>{S.pos=[p.coords.latitude.toFixed(5),p.coords.longitude.toFixed(5)];S.city='';const c=$('#city');if(c){c.value='';c.placeholder='Usando sua localização'}updLinks();toast('Usando sua localização')},()=>toast('Não foi possível obter a localização. Digite sua cidade.'),{timeout:8000,maximumAge:600000})}
- else if(b.id==='exit'){$('#dis').style.display='block';$('#dis').scrollTop=0}
+ else if(b.id==='exit'||b.id==='exit2'){$('#dis').style.display='block';$('#dis').scrollTop=0}
  else if(b.id==='back'||b.id==='back2'||b.id==='back3')$('#dis').style.display='none';
  else if(b.dataset.d){document.querySelectorAll('#dtb button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('#dpl .pc').forEach(c=>c.style.display=(b.dataset.d==='all'||c.dataset.k===b.dataset.d)?'':'none')}
  else if(b.dataset.del){const id=+b.dataset.del,m=$('#msg')?.value;if(S.del===id){ls.set('rf_posts',ls.get('rf_posts',[]).filter(x=>x.id!==id));S.del=null;render();toast('Publicação excluída')}else{S.del=id;render()}if(m)$('#msg').value=m}
@@ -265,7 +356,7 @@ document.addEventListener('click',e=>{
  else if(b.dataset.hug){const id=+b.dataset.hug;let l=ls.get('rf_liked',[]);l=l.includes(id)?l.filter(x=>x!==id):l.concat(id);ls.set('rf_liked',l);const m=$('#msg').value;render();$('#msg').value=m}
  else if(b.id==='send'){const t=$('#msg').value.trim();if(t.length<3)return toast('Escreva algo primeiro');
   const tag=document.querySelector('[data-ptag][aria-pressed="true"]').dataset.ptag;
-  const p=ls.get('rf_posts',[]);p.unshift({id:Date.now(),tag,f:S.user.f,n:S.user.n,t,h:0,ago:'agora'});ls.set('rf_posts',p.slice(0,50));S.tag='Todos';render();toast('Publicado de forma anônima')}
+  const p=ls.get('rf_posts',[]);p.unshift({id:Date.now(),tag,f:S.user.f,n:S.user.n,t,h:0,ago:'agora'});ls.set('rf_posts',p.slice(0,50));S.tag='Todas';render();toast('Publicado de forma anônima')}
 });
 document.addEventListener('input',e=>{if(e.target.id==='city'){S.city=e.target.value;if(S.city)S.pos=null;updLinks()}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#dis').style.display='none'});
@@ -284,7 +375,7 @@ function gate(err,info){const g=$('#gate');g.classList.add('on');g.scrollTop=0;
  $('#en').onclick=async()=>{const k=$('#ek').value.replace(/\D/g,'');if(k.length!==12)return gate('A chave tem 12 dígitos.');
   let h;try{h=await hash(k)}catch(e){return gate('Não foi possível verificar a chave neste navegador.')}
   if(!rec||rec.h!==h)return gate('Chave não encontrada neste aparelho.');start(userFrom(k))}}
-function start(u){S.user=u;S.tab='home';$('#gate').classList.remove('on');$('#gate').innerHTML='';render();scrollTo(0,0)}
+function start(u){S.user=u;S.tab='home';$('#gate').classList.remove('on');$('#gate').innerHTML='';render();scrollTo(0,0);welcome()}
 gate();
 
 </script>
