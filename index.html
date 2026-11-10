@@ -203,7 +203,7 @@ a.row{text-decoration:none;color:inherit}
 <div id="dis"><div class="top"><div><h2>Verde em Casa</h2><p>Guia prático de cultivo de plantas ornamentais</p></div></div><div class="in"><div class="tb" id="dtb"><button class="on" data-d="all">Todas</button><button data-d="sol">Sol</button><button data-d="sombra">Sombra</button></div><div id="dpl"></div>
 <h4>Calendário de rega</h4><table><tr><th>Planta</th><th>Verão</th><th>Inverno</th></tr><tr><td>Echeveria</td><td>10 dias</td><td>20 dias</td></tr><tr><td>Samambaia</td><td>2 dias</td><td>4 dias</td></tr><tr><td>Orquídea</td><td>5 dias</td><td>8 dias</td></tr><tr><td>Lavanda</td><td>6 dias</td><td>12 dias</td></tr></table>
 <h4>Dica do mês</h4><p>Adube com húmus de minhoca a cada dois meses na primavera e no verão, misturando 2 colheres de sopa ao substrato superficial.</p>
-<button class="close" id="back">Fechar guia</button></div><button class="corner" id="back2" aria-label="Fechar"></button></div>
+<button class="close" id="back">Fechar</button></div><button class="corner" id="back2" aria-label="Fechar"></button></div>
 <div id="md"></div>
 <div id="toast"></div>
 <script>
@@ -284,7 +284,7 @@ function home(){return `<div class="hero"><h1>Olá, ${S.user.n.split(' ')[0]}</h
 <a class="sos" href="tel:190"><div><b>Estou em perigo agora</b><span>Toque para ligar para a Polícia Militar</span></div><i>190</i></a>
 <div class="sos2"><a href="tel:180">Ligue 180<small>Central da Mulher · 24 h</small></a><a href="https://wa.me/5561996100180" target="_blank" rel="noopener">WhatsApp<small>(61) 9610-0180</small></a></div>
 <div class="grid">${[['entender','b','rosette','Entender','Os 6 tipos de violência'],['direitos','a','rose','Meus direitos','Lei e medidas protetivas'],['rede','a','orchid','Serviços','CRAS, CREAS, DEAM'],['jardim','b','daisy','Jardim','Apoio entre mulheres']].map(r=>`<button class="tile ${r[1]}" data-go="${r[0]}"><svg class="fl" viewBox="0 0 100 100"><use href="#${r[2]}"/></svg><b>${r[3]}</b><small>${r[4]}</small></button>`).join('')}</div>
-<div class="endnote"><div class="note">Precisa sair da tela rápido? Toque em <b>Saída</b>. Para voltar, use o botão <b>Fechar guia</b>.</div></div>${spons()}`}
+<div class="endnote"><div class="note">Precisa sair da tela rápido? Toque em <b>Saída</b> para abrir o guia de plantas. Nele, o botão <b>Fechar</b> fecha a aba e apaga a sessão. Para voltar ao app sem fechar, toque no canto inferior direito da tela do guia.</div></div>${spons()}`}
 
 function entender(){return `<h1>Entender a violência</h1><p class="mute">A violência vai além da agressão física. Reconhecer é o primeiro passo.</p>${types.map(t=>`<details><summary>${t[0]}</summary><div><div class="lbl">O que diz a lei</div><p>${t[1]}</p><div class="lbl">Exemplos</div><p>${t[2]}</p></div></details>`).join('')}<div class="note">Se você se reconheceu em algum destes exemplos, a culpa não é sua.</div>`}
 
@@ -347,7 +347,8 @@ document.addEventListener('click',e=>{
  else if(b.id==='hb')go('home');
  else if(b.id==='loc'){if(!navigator.geolocation)return toast('Localização indisponível neste aparelho');navigator.geolocation.getCurrentPosition(p=>{S.pos=[p.coords.latitude.toFixed(5),p.coords.longitude.toFixed(5)];S.city='';const c=$('#city');if(c){c.value='';c.placeholder='Usando sua localização'}updLinks();toast('Usando sua localização')},()=>toast('Não foi possível obter a localização. Digite sua cidade.'),{timeout:8000,maximumAge:600000})}
  else if(b.id==='exit'||b.id==='exit2'){$('#dis').style.display='block';$('#dis').scrollTop=0}
- else if(b.id==='back'||b.id==='back2'||b.id==='back3')$('#dis').style.display='none';
+ else if(b.id==='back')fuga();
+ else if(b.id==='back2'||b.id==='back3')$('#dis').style.display='none';
  else if(b.dataset.d){document.querySelectorAll('#dtb button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('#dpl .pc').forEach(c=>c.style.display=(b.dataset.d==='all'||c.dataset.k===b.dataset.d)?'':'none')}
  else if(b.dataset.del){const id=+b.dataset.del,m=$('#msg')?.value;if(S.del===id){ls.set('rf_posts',ls.get('rf_posts',[]).filter(x=>x.id!==id));S.del=null;render();toast('Publicação excluída')}else{S.del=id;render()}if(m)$('#msg').value=m}
  else if(b.dataset.delno){const m=$('#msg')?.value;S.del=null;render();if(m)$('#msg').value=m}
@@ -376,6 +377,16 @@ function gate(err,info){const g=$('#gate');g.classList.add('on');g.scrollTop=0;
   let h;try{h=await hash(k)}catch(e){return gate('Não foi possível verificar a chave neste navegador.')}
   if(!rec||rec.h!==h)return gate('Chave não encontrada neste aparelho.');start(userFrom(k))}}
 function start(u){S.user=u;S.tab='home';$('#gate').classList.remove('on');$('#gate').innerHTML='';render();scrollTo(0,0);welcome()}
+function fuga(){
+ try{S.user=null;S.tab='home';S.rep=S.cm=S.del=null;$('#view').innerHTML='';$('#md').classList.remove('on');$('#md').innerHTML='';$('#msg')&&($('#msg').value='');sessionStorage.setItem('rf_out','1')}catch(e){}
+ $('#dis').style.display='block';$('#dis').scrollTop=0;
+ try{gate()}catch(e){}
+ try{window.close()}catch(e){}
+ setTimeout(()=>{try{location.replace('https://www.google.com.br/search?q=previs%C3%A3o+do+tempo')}catch(e){}},100)}
+(()=>{let out=0,bf=0;try{out=sessionStorage.getItem('rf_out');bf=(performance.getEntriesByType('navigation')[0]||{}).type==='back_forward'}catch(e){}
+ const bounce=()=>{try{S.user=null;$('#view').innerHTML=''}catch(e){}$('#dis').style.display='block';location.replace('https://www.google.com.br/search?q=previs%C3%A3o+do+tempo')};
+ if(out&&bf)bounce();else try{sessionStorage.removeItem('rf_out')}catch(e){}
+ addEventListener('pageshow',e=>{if(e.persisted){let o=0;try{o=sessionStorage.getItem('rf_out')}catch(x){}if(o)bounce()}})})();
 gate();
 
 </script>
